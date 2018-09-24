@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.AddStudentDialogFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/ID"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_student_id"
+        app:layout_constraintEnd_toStartOf="@+id/add_student_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/name"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_Student_name"
+        app:layout_constraintEnd_toStartOf="@+id/add_Student_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/add_student_id"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_Student_name"
+        app:layout_constraintStart_toStartOf="@+id/add_Student_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        android:hint="@string/putId"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/add_Student_name"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_student_id"
+        android:hint="@string/putName"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/G"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/Grade"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/MG"
+        app:layout_constraintEnd_toStartOf="@+id/MG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MG" />
+
+    <EditText
+        android:id="@+id/MG"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/midGrade"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/FG"
+        app:layout_constraintEnd_toStartOf="@+id/FG"
+        app:layout_constraintStart_toEndOf="@+id/G"
+        app:layout_constraintTop_toTopOf="@+id/FG"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/FG"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/FinGrade"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MG"
+        app:layout_constraintTop_toBottomOf="@+id/add_Student_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
